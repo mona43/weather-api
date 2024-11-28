@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Weather</title>
+</head>
+
+<body>
+  <!-- start of navbar -->
+  <nav class="navbar navbar-expand-lg dark-gray-bg py-4 overflow-auto ">
+    <div class="container w-75">
+      <!-- Weather img+name -->
+
+      <a class="navbar-brand" href="#">
+        <div class="nav-title d-flex">
+          <i class="fa-solid fa-cloud-sun-rain"></i>
+          <div>
+            <h1 class="position-relative">Weather</h1>
+            <small class="position-relative">tagline goes here</small>
+          </div>
+        </div>
+      </a>
+      <!-- response icons -->
+      <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- tabs of nav -->
+      <div class="allTabs nav-links collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class=" nav-item mx-2">
+            <a class="navTabs nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class=" nav-item mx-2 ">
+            <a class="navTabs nav-link" href="#">News</a>
+          </li>
+
+          <li class=" nav-item mx-2">
+            <a class="navTabs nav-link" href="#">Live cameras</a>
+          </li>
+
+          <li class=" nav-item mx-2">
+            <a class="navTabs nav-link" href="#">Photos</a>
+          </li>
+
+          <li class=" nav-item mx-2">
+            <a class="navTabs nav-link" href="#">Contact</a>
+          </li>
+
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- end of navbar -->
+  <section class=" pt-5 ">
+    <div class="container w-75">
+      <!-- search input -->
+      <div class="mb-3 position-relative my-5">
+        <input id="countrySearch" type="text" class="input form-control border-0 rounded-pill py-3" placeholder="Find your location...">
+        <button id="searchBtn" class="inputBtn btn rounded-pill position-absolute py-2 px-5">Find</button>
+      </div>
+      <!-- cards section -->
+      <div class="row g-0 my-5">
+        <div class="col-md-4 ">
+          <div id="card1" class="card mb-3 border-0">
+          
+          </div>
+        </div>
+        <div class="col-md-4 ">
+          <div id="card2" class="card mb-3 border-0">
+          </div>
+        </div>
+        <div class="col-md-4 ">
+          <div id="card3" class="card mb-3 border-0">
+          
+            
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+  <footer>
+
+    <div class="container w-75 py-4">
+      <div class="row">
+        <div class="col-md-8">
+          <div class="mb-3 position-relative my-5">
+            <input type="email" class=" input form-control border-0 rounded-pill py-3"
+              placeholder="Enter your email...">
+            <button class="inputBtn btn rounded-pill position-absolute py-2 px-5">Subscribe</button>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="social-icons text-center pt-5"> 
+          
+              <a><i class="fa-brands fa-facebook"></i></a>
+              <a><i class="fa-brands fa-twitter"></i></a>
+              <a><i class="fa-brands fa-google"></i></a>
+              <a><i class="fa-brands fa-pinterest"></i></a>
+          
+          </div>
+        </div>
+      </div>
+
+      <p class="pt-3">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+
+    </div>
+
+
+  </footer>
+  <script src="https://kit.fontawesome.com/dee991c215.js" crossorigin="anonymous"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
